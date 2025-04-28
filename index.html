@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Buy premium coffee online">
+  <meta name="keywords" content="coffee, online store, Coffee Shop">
+  <!--insert an Favicon-->
+  <link rel="icon" href="logo/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/Css.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <title>Salman's Coffee Shop </title>
+</head>
+
+<body>
+  <!-- Header with logo and navigation -->
+  <header>
+  <img src="logo/logo.png" alt="Salman's Coffee Shop" class="logo">
+    <h1>Salman's Coffee Shop </h1>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+</header>
+<!--welcome message and insert a video-->
+  <section id="home">
+    <h2>Welcome to Salman's Coffee Shop</h2>
+    <p>The best online coffee shop ever. </p>
+    <video controls src="video/Video Coffee.mp4"></video>
+  </section>
+
+<!--our products with photos-->
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-list">
+
+      <figure>
+        <img src="images/Latte.webp" alt="Latte">
+        </figcaption>
+
+        <details>
+          <summary><strong>Latte - 2.000 BHD</strong></summary>
+          A creamy blend of espresso and steamed milk, smooth and mellow.
+        </details>
+      </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/Mocha.webp" alt="Mocha">
+        <figcaption>
+          <details>
+            <summary><strong>Mocha - 2.200 BHD</strong></summary>
+            A sweet mix of espresso, chocolate, and milk – perfect for chocolate lovers.
+          </details>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/Americano.jpeg" alt="Americano">
+        <figcaption>
+          <details>
+            <summary><strong>Americano - 1.800 BHD</strong></summary>
+            Espresso diluted with hot water, light yet rich in flavor.
+          </details>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/espresso.webp" alt="Espresso">
+        <figcaption>
+          <details>
+            <summary><strong>Espresso - 1.500 BHD</strong></summary>
+            Bold and intense shot of coffee, perfect for a quick caffeine hit.
+          </details>
+        </figcaption>
+        </figure>
+    </div>
+
+    <!--about section and adding an audio ans some extra details -->
+  </section>
+  <section id="about">
+    <h2>About Our Coffee</h2>
+    <p>We source the best beans from around the world to bring you the freshest coffee possible </p>
+
+    <h2>Audio</h2>
+    <p>And here a sound of our working place while the paristas making some coffee.</p>
+
+    <audio controls src="audio/making-a-coffee-latte-56561.mp3"></audio>
+    <details>
+
+      <summary>Why our coffee is special</summary>
+      <p>Our beans are roasted fresh and shipped fast for optimal flavor.</p>
+    </details>
+
+    <progress value="70" max="100"></progress>
+  </section>
+
+<!--quiz section-->
+  <section id="quiz">
+    <h2>Coffee Knowledge Quiz</h2>
+    <p>What country is famous for its coffee?</p>
+  
+    <button id="btnBrazil" type="button">Brazil</button>
+    <button id="btnJapan" type="button">Japan</button>
+    
+  
+    <p id="quiz-result"></p>
+  </section>
+  
+  <!--contact and message d-->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="email">Email:</label>
+<input type="text" id="email" aria-label="Enter your email address">
+<span id="email-error" class="error-msg"></span>
+
+<label for="message">Message:</label>
+<textarea id="message" aria-label="Enter your message"></textarea>
+<span id="message-error" class="error-msg"></span>
+      </label>
+
+      <button type="submit">Submit</button>
+      <p id="form-error"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>Salman's Coffee Shop</p>
+  </footer>
+  <script src="js/Js.js"></script>
+</body>
+</html>
